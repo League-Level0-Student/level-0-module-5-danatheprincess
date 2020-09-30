@@ -56,12 +56,10 @@ public class Forloopgauntlet {
 //			}
 //			System.out.println();
 //		}
-		for (int i = 0; i <5 ; i += 1) {
-			for (int j = 1; j < 2; j++) {
-				System.out.print(i + j + " ");
-
-			}
-			System.out.println();
+		String output="";
+		for(int i=0;i<7;i+=1) {
+			output+="* ";
+			System.out.println(output);
 		}
 		
 	}
