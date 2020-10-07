@@ -1,5 +1,7 @@
 package _03_method_writing._1_obedient_robot;
 
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class ObedientRobot {
@@ -7,15 +9,27 @@ public class ObedientRobot {
 	
 public static void main(String[] args) {
 	num.setSpeed(100);
-drawSquare();
-drawTringle();	
-drawCircle();	
-	
-	
-	
-	
-	
-	
+	num.penDown();
+	String color=JOptionPane.showInputDialog("what color do you want(light red, light blue, light yellow ");
+	if(color.equals("light red")) {
+	num.setPenColor(255,102,102);
+	}
+	else if(color.equals("light blue")) {
+		num.setPenColor(51, 204, 255);
+	}
+			
+
+String shape=JOptionPane.showInputDialog("what shape do you want to draw(circle, tringle, or square");
+if(shape.equals("circle")) {
+	drawCircle();
+}
+else if(shape.equals("tringle")){
+	drawTringle();
+} 
+else
+	drawSquare();
+
+
 	
 	
 	
