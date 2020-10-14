@@ -17,6 +17,8 @@ public static void main(String[] args) {
 	else if(color.equals("light blue")) {
 		num.setPenColor(51, 204, 255);
 	}
+	else
+		num.setPenColor(255, 255, 204);
 			
 
 String shape=JOptionPane.showInputDialog("what shape do you want to draw(circle, tringle, or square");
